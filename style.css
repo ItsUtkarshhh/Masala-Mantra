@@ -1,0 +1,759 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    min-height: 100vh;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+#WebsiteMainContainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#navContainer {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* border-bottom: 1px solid black; */
+}
+
+#navBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+#navList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-right: 20px;
+}
+
+#brandName {
+    cursor: pointer;
+}
+
+.navigationPages {
+    text-decoration: none;
+    color: rgb(21, 21, 21);
+    transition: color 0.3s ease;
+}
+
+.navigationPages:hover {
+    color: #fa3c3c;
+}
+
+#contentContainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#mainBanner {
+    height: 600px;
+    width: 100%;
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    flex-direction: row;
+}
+
+#mainBannerContent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-left: 30px;
+    gap: 10px;
+}
+
+#mainBannerContent h2 {
+    color: white;
+    font-size: 35px;
+}
+
+#mainBannerContent p {
+    color: white;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 15px;
+}
+
+.buttons {
+    width: 120px;
+    height: 50px;
+    font-size: 15px;
+    color: white;
+    /* background-color: #FAB12F;
+    border: 2px solid white; */
+}
+
+#letsCook {
+    background-color: #FAB12F;
+    /* background-color: #fa3c3c; */
+    font-weight: 550;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in;
+}
+
+#letsCook:hover {
+    background-color: #d49529;
+    /* background-color: #cf3131; */
+    cursor: pointer;
+}
+
+#explore {
+    background-color: rgb(21, 21, 21);
+    border: 2px solid white;
+    font-weight: 550;
+    border-radius: 5px;
+}
+
+#explore:hover {
+    background-color: #FAB12F;
+    /* background-color: #fa3c3c; */
+    color: rgb(21, 21, 21);
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+}
+
+#mainBannerImage {
+    height: 600px;
+    width: 50%;
+}
+
+#mainBannerImage img {
+    height: 600px;
+    object-fit: cover;
+    /* align-items: center; */
+}
+
+#categoryBanner {
+    width: 100%;
+    height: 550px;
+}
+
+#categoryBanner-title {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#categoryBanner-title p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#categoryBanner-title p:hover {
+    color: #fa3c3c;
+    cursor: pointer;
+    transition: color 0.2s ease-in;
+}
+
+#categoryCards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 100px;
+}
+
+.categoryCards {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.categoryCards p {
+    text-align: center;
+}
+
+.categoryCards img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, margin-top 0.3s ease;
+}
+
+.categoryCards img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#searchBarContainer {
+    width: 100%;
+    height: max-content;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    /* gap: 10px; */
+}
+
+#searchBarContainer input {
+    height: 50px;
+    width: 600px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 20px;
+    /* border-radius: 20px; */
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border: 2px solid #ff5c5c;
+}
+
+#searchBarContainer button {
+    width: 100px;
+    /* border-radius: 60px; */
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border: none;
+    color: white;
+    background-color: #ff5c5c;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 550;
+    transition: background-color 0.3s ease;
+    /* padding-right: 3px; */
+    text-align: center;
+}
+
+#searchBarContainer button:hover {
+    background-color: #e14a4a;
+}
+
+#mainCourseCuisine-container {
+    height: max-content;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+#mainCourseCuisineTitle-container {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainCourseCuisineTitle-container h2 {
+    text-align: center;
+    width: max-content;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+#mainCourseCuisineTitle-container h2:hover {
+    color: #fa3c3c;
+    cursor: pointer;
+}
+
+#mainCourseCuisineContainer-sub {
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.mainCourseDishes {
+    position: relative; /* Important for positioning the title box */
+}
+
+.mainCourseDishes img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mainCourseDishes img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.mainCourseDishes p {
+    visibility: hidden; /* Hide the title initially */
+    opacity: 0; /* Make the title invisible */
+    position: absolute; /* Position it relative to the image */
+    bottom: 20px; /* Place it slightly below the image */
+    left: 50%; /* Center the title horizontally */
+    transform: translateX(-50%); /* Adjust to truly center it */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition for visibility and opacity */
+}
+
+.mainCourseDishes:hover p {
+    visibility: visible; /* Show the title box when hovering */
+    opacity: 1; /* Make the title fully visible */
+}
+
+#snacksCuisine-container {
+    height: max-content;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+#snacksCuisineTitle-container {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#snacksCuisineTitle-container h2 {
+    text-align: center;
+    width: max-content;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+#snacksCuisineTitle-container h2:hover {
+    color: #fa3c3c;
+    cursor: pointer;
+}
+
+#snacksCuisineContainer-sub {
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.snacksDishes {
+    position: relative; /* Important for positioning the title box */
+}
+
+.snacksDishes img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.snacksDishes img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.snacksDishes p {
+    visibility: hidden; /* Hide the title initially */
+    opacity: 0; /* Make the title invisible */
+    position: absolute; /* Position it relative to the image */
+    bottom: 20px; /* Place it slightly below the image */
+    left: 50%; /* Center the title horizontally */
+    transform: translateX(-50%); /* Adjust to truly center it */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition for visibility and opacity */
+}
+
+.snacksDishes:hover p {
+    visibility: visible; /* Show the title box when hovering */
+    opacity: 1; /* Make the title fully visible */
+}
+
+#beverages-container {
+    height: max-content;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+#beveragesTitle-container {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#beveragesTitle-container h2 {
+    text-align: center;
+    width: max-content;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+#beveragesTitle-container h2:hover {
+    color: #fa3c3c;
+    cursor: pointer;
+}
+
+#beveragesContainer-sub {
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.beverages {
+    position: relative; /* Important for positioning the title box */
+}
+
+.beverages img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beverages img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.beverages p {
+    visibility: hidden; /* Hide the title initially */
+    opacity: 0; /* Make the title invisible */
+    position: absolute; /* Position it relative to the image */
+    bottom: 20px; /* Place it slightly below the image */
+    left: 50%; /* Center the title horizontally */
+    transform: translateX(-50%); /* Adjust to truly center it */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition for visibility and opacity */
+}
+
+.beverages:hover p {
+    visibility: visible; /* Show the title box when hovering */
+    opacity: 1; /* Make the title fully visible */
+}
+
+#dessert-container {
+    height: max-content;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+#dessertTitle-container {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dessertTitle-container h2 {
+    text-align: center;
+    width: max-content;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+#dessertTitle-container h2:hover {
+    color: #fa3c3c;
+    cursor: pointer;
+}
+
+#dessertContainer-sub {
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.dessert {
+    position: relative; /* Important for positioning the title box */
+}
+
+.dessert img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dessert img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.dessert p {
+    visibility: hidden; /* Hide the title initially */
+    opacity: 0; /* Make the title invisible */
+    position: absolute; /* Position it relative to the image */
+    bottom: 20px; /* Place it slightly below the image */
+    left: 50%; /* Center the title horizontally */
+    transform: translateX(-50%); /* Adjust to truly center it */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition for visibility and opacity */
+}
+
+.dessert:hover p {
+    visibility: visible; /* Show the title box when hovering */
+    opacity: 1; /* Make the title fully visible */
+}
+
+#footer-container {
+    width: 100%;
+    height: 330px;
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-content: center; */
+    align-items: center;
+    /* gap: 15px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+
+#footerDetails {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-content: flex-start; */
+    align-content: center;
+    gap: 150px;
+    color: white;
+}
+
+#websiteIntro-footer {
+    width: 300px;
+    height: max-content;
+}
+
+#websiteIntro-footer h3 {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#websiteIntro-footer p {
+    font-size: 15px;
+    color: rgb(184, 184, 184);
+}
+
+#menu-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+#menu-footer a {
+    text-decoration: none;
+    color: rgb(184, 184, 184);
+    font-size: 15px;
+}
+
+#socialmedia-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+#socialmedia-footer a {
+    text-decoration: none;
+    color: rgb(184, 184, 184);
+    font-size: 15px;
+}
+
+#newsletter-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+#newsletter-footer p {
+    text-decoration: none;
+    color: rgb(184, 184, 184);
+    font-size: 15px;
+}
+
+#newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+#newsletter input {
+    height: 30px;
+    width: 150px;
+    padding-left: 5px;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    /* transition: border 0.3s ease; */
+    color: rgb(21, 21, 21);
+    border: 2px solid #fa3c3c;
+}
+
+#newsletter button {
+    width: 70px;
+    background-color: #fa3c3c;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#newsletter button:hover {
+    background-color: #cf3131;
+}
+
+#copyrights {
+    color: rgb(184, 184, 184);
+    padding-bottom: 10px;
+}
+
+/* Model Styling */
+#recipeModel {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+#cuisineContent {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    width: 80%;
+    text-align: center;
+    position: relative;
+}
+
+#crossButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#crossButton button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#cuisineImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#Recipe h2 {
+    margin: 15px 0;
+    font-size: 24px;
+}
+
+#Recipe p {
+    font-size: 16px;
+    line-height: 1.6;
+}

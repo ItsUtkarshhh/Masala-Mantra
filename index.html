@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+VA+Guides&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Masala Mantra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="WebsiteMainContainer">
+
+        <!-- Navbar Element! -->
+        <header id="navContainer">
+            <nav id="navBar">
+                <div id="brandName">
+                    <h3>Masala Mantra</h3>
+                </div>
+                <div id="navList">
+                    <a href="#" class="navigationPages">Home</a>
+                    <a href="#" class="navigationPages">Orders</a>
+                    <a href="#" class="navigationPages">Contact Us</a>
+                    <a href="#" class="navigationPages">About Us</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Banner Element -->
+        <main id="contentContainer">
+            <div id="mainBanner">
+                <div id="mainBannerContent" class="mainBanner-subContainers">
+                    <h2>Flavors of India: A Journey Through Authentic Recipes</h2>
+                    <p>Discover authentic recipes, savor diverse flavors, and make every meal a celebration.</p>
+                    <div id="buttons">
+                        <button id="letsCook" class="buttons">Lets Cook</button>
+                        <button id="explore" class="buttons">Explore</button>
+                    </div>
+                </div>
+                <div id="mainBannerImage" class="mainBanner-subContainers">
+                    <img src="Images/Indian Cuisine.jpeg" alt="Indian Cuisines">
+                </div>
+            </div>
+
+            <!-- Category Element -->
+            <div id="categoryBanner">
+                <div id="categoryBanner-title">
+                    <p>Explore various Categories</p>
+                </div>
+                <div id="categoryCards-container">
+                    <div class="categoryCards">
+                        <p>Main Course</p>
+                        <div>
+                            <img src="Images/Main Course.jpg" alt="Main course">
+                        </div>
+                    </div>
+                    <div class="categoryCards">
+                        <p>Snacks</p>
+                        <div>
+                            <img src="Images/Snacks.jpg" alt="Snacks">
+                        </div>
+                    </div>
+                    <div class="categoryCards">
+                        <p>Beverages</p>
+                        <div>
+                            <img src="Images/Beverages.jpg" alt="Beverages">
+                        </div>
+                    </div>
+                    <div class="categoryCards">
+                        <p>Dessert</p>
+                        <div>
+                            <img src="Images/Desserts.jpg" alt="Dessert">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Searchbar Section -->
+            <div id="searchBarContainer">
+                <input type="text" placeholder="Choose your Cuisine..." id="searchBar">
+                <button id="searchButton">Search</button>
+            </div>
+
+            <!-- Cuisines Section -->
+            <div id="mainCourseCuisine-container">
+                <div id="mainCourseCuisineTitle-container">
+                    <h2>Main Course</h2>
+                </div>
+                <div id="mainCourseCuisineContainer-sub">
+                    <div class="mainCourseDishes">
+                        <img src="Images/Chole Bhature.jpg" alt="Chole Bhature" onclick="openModal('Images/Chole Bhature.jpg', 'Chole Bhature', 'This is the recipe description for Chole Bhature.')">
+                        <p>Chole Bhature</p>
+                    </div>
+                    <div class="mainCourseDishes">
+                        <img src="Images/Kadhai Paneer.jpg" alt="Kadhai Paneer" onclick="openModal('Images/Kadhai Paneer,jpg', 'Kadhai Paneer', 'This is the recipe description for Kadhai Paneer.')">
+                        <p>Kadhai Paneer</p>
+                    </div>
+                    <div class="mainCourseDishes">
+                        <img src="Images/Rajma Chawal.png" alt="Rajma Chawal" onclick="openModal('Images/Rajma Chawal.png', 'Rajma Chawal', 'This is the recipe description for Dish 1.')">
+                        <p>Rajma Chawal</p>
+                    </div>
+                    <div class="mainCourseDishes">
+                        <img src="Images/Dal Makhani.jpg" alt="Dal Makhani" onclick="openModal('Images/Dal Makhani.jpg', 'Dal Makhani', 'This is the recipe description for Dish 1.')">
+                        <p>Dal Makhani</p>
+                    </div>
+                    <div class="mainCourseDishes">
+                        <img src="Images/Veg Biryani.jpeg" alt="Veg Biryani" onclick="openModal('Images/Veg Biryani.jpeg', 'Veg Biryani', 'This is the recipe description for Dish 1.')">
+                        <p>Veg Biryani</p>
+                    </div>
+                    <div class="mainCourseDishes">
+                        <img src="Images/Mix Veg.jpg" alt="Mix Veg" onclick="openModal('Images/Mix Veg.jpg', 'Mix Veg', 'This is the recipe description for Dish 1.')">
+                        <p>Mix Veg</p>
+                    </div>
+                    <div class="mainCourseDishes">
+                        <img src="Images/Shahi Paneer.jpg" alt="Shahi Paneer" onclick="openModal('Images/Shahi Paneer.jpg', 'Shahi Paneer', 'This is the recipe description for Dish 1.')">
+                        <p>Shahi Paneer</p>
+                    </div>
+                    <div class="mainCourseDishes">
+                        <img src="Images/Masala Dosa.jpg" alt="Masala Dosa" onclick="openModal('Images/Masala Dosa.jpg', 'Masala Dosa', 'This is the recipe description for Dish 1.')">
+                        <p>Masala Dosa</p>
+                    </div>
+                    <div class="mainCourseDishes">
+                        <img src="Images/Idli.png" alt="Idli" onclick="openModal('Images/Idli.png', 'Idli', 'This is the recipe description for Dish 1.')">
+                        <p>Idli</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snacks Section -->
+            <div id="snacksCuisine-container">
+                <div id="snacksCuisineTitle-container">
+                    <h2>Snacks</h2>
+                </div>
+                <div id="snacksCuisineContainer-sub">
+                    <div class="snacksDishes">
+                        <img src="Images/Golgappe.jpg" alt="Golgappe" onclick="openModal('Images/Golgappe.jpg', 'Pani Puri', 'This is the recipe description for Dish 1.')">
+                        <p>Pani Puri</p>
+                    </div>
+                    <div class="snacksDishes">
+                        <img src="Images/Bhel Puri.jpg" alt="Bhelpuri" onclick="openModal('Images/Bhel Puri.jpg', 'Bhel Puri', 'This is the recipe description for Dish 1.')">
+                        <p>Bhel Puri</p>
+                    </div>
+                    <div class="snacksDishes">
+                        <img src="Images/Chaat.jpg" alt="Chaat" onclick="openModal('Images/Chaat.jpg', 'Chaat', 'This is the recipe description for Dish 1.')">
+                        <p>Chaat</p>
+                    </div>
+                    <div class="snacksDishes">
+                        <img src="Images/Pav Bhaji.png" alt="Pavbhaji" onclick="openModal('Images/Pav Bhaji.png', 'Pav Bhaji', 'This is the recipe description for Dish 1.')">
+                        <p>Pav Bhaji</p>
+                    </div>
+                    <div class="snacksDishes">
+                        <img src="Images/Samosa.jpg" alt="Samosa" onclick="openModal('Images/Samosa.jpg', 'Samosa', 'This is the recipe description for Dish 1.')">
+                        <p>Samosa</p>
+                    </div>
+                    <div class="snacksDishes">
+                        <img src="Images/Spring Roll.jpg" alt="springroll" onclick="openModal('Images/Spring Roll.jpg', 'Spring Roll', 'This is the recipe description for Dish 1.')">
+                        <p>Spring Roll</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snacks Section --> 
+            <div id="beverages-container">
+                <div id="beveragesTitle-container">
+                    <h2>Beverages</h2>
+                </div>
+                <div id="beveragesContainer-sub">
+                    <div class="beverages">
+                        <img src="Images/Tea.png" alt="Tea" onclick="openModal('Images/Tea.png', 'Tea', 'This is the recipe description for Dish 1.')">
+                        <p>Tea</p>
+                    </div>
+                    <div class="beverages">
+                        <img src="Images/Coffee.png" alt="Coffee" onclick="openModal('Images/Coffee.png', 'Coffee', 'This is the recipe description for Dish 1.')">
+                        <p>Coffee</p>
+                    </div>
+                    <div class="beverages">
+                        <img src="Images/Lassi.jpg" alt="Lassi" onclick="openModal('Images/Lassi.jpg', 'Lassi', 'This is the recipe description for Dish 1.')">
+                        <p>Lassi</p>
+                    </div>
+                    <div class="beverages">
+                        <img src="Images/Mango Lassi.jpg" alt="Mangolassi" onclick="openModal('Images/Mango Lassi.jpg', 'Mango Lassi', 'This is the recipe description for Dish 1.')">
+                        <p>Mango Lassi</p>
+                    </div>
+                    <div class="beverages">
+                        <img src="Images/Mojito.png" alt="Mojito" onclick="openModal('Images/Mojito.png', 'Mojito', 'This is the recipe description for Dish 1.')">
+                        <p>Mojito</p>
+                    </div>
+                    <div class="beverages">
+                        <img src="Images/Mocktail.jpg" alt="Mocktail" onclick="openModal('Images/Mocktail.jpg', 'Mocktail', 'This is the recipe description for Dish 1.')">
+                        <p>Mocktail</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Dessert Section -->
+            <div id="dessert-container">
+                <div id="dessertTitle-container">
+                    <h2>Dessert & Sweets</h2>
+                </div>
+                <div id="dessertContainer-sub">
+                    <div class="beverages">
+                        <img src="Images/Gulab Jamun.png" alt="Gulab Jamun" onclick="openModal('Images/Gulab Jamun.png', 'Gulab Jamun', 'This is the recipe description for Dish 1.')">
+                        <p>Gulab Jamun</p>
+                    </div>
+                    <div class="dessert">
+                        <img src="Images/Rasgulla.jpg" alt="Rasgulla" onclick="openModal('Images/Rasgulla.jpg', 'Rasgulla', 'This is the recipe description for Dish 1.')">
+                        <p>Rasgulla</p>
+                    </div>
+                    <div class="dessert">
+                        <img src="Images/Rasmalai.jpg" alt="Rasmalai" onclick="openModal('Images/Rasmalai.jpg', 'Rasmalai', 'This is the recipe description for Dish 1.')">
+                        <p>Rasmalai</p>
+                    </div>
+                    <div class="dessert">
+                        <img src="Images/Jalebi.jpg" alt="Jalebi" onclick="openModal('Images/Jalebi.jpg', 'Jalebi', 'This is the recipe description for Dish 1.')">
+                        <p>Jalebi</p>
+                    </div>
+                    <div class="dessert">
+                        <img src="Images/Gajar ka Halwa.jpeg" alt="Gajar Ka Halwa" onclick="openModal('Images/Gajar ka Halwa.jpeg', 'Gajar Ka Halwa', 'This is the recipe description for Dish 1.')">
+                        <p>Gajar Ka Halwa</p>
+                    </div>
+                    <div class="dessert">
+                        <img src="Images/Sweets.png" alt="Sweets" onclick="openModal('Images/Sweets.png', 'Sweets', 'This is the recipe description for Dish 1.')">
+                        <p>Sweets</p>
+                    </div>
+                    <div class="dessert">
+                        <img src="Images/Chocolava Cake.jpg" alt="Chocolava Cake" onclick="openModal('Images/Chocolava Cake.jpg', 'Chocolava Cake', 'This is the recipe description for Dish 1.')">
+                        <p>Chocolava Cake</p>
+                    </div>
+                    <div class="dessert">
+                        <img src="Images/Cakes & Pastry.jpg" alt="Cakes & Pastry" onclick="openModal('Images/Cakes & Pastry.jpg', 'Cakes & Pastry', 'This is the recipe description for Dish 1.')">
+                        <p>Cakes & Pastries</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer-container">
+            <div id="footerDetails">
+                <div id="websiteIntro-footer">
+                    <h3 id="websiteHeading-footer">Masala Mantra</h3>
+                    <p>Masala Mantra is a practice project showcasing a love for food and web development. Explore diverse recipes, authentic flavors, and creative culinary inspirations while we refine our skills in building engaging digital experiences. Your feedback is always welcome!</p>
+                </div>
+                <div id="menu-footer">
+                    <h3>Menu</h3>
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Site Information</a>
+                    <a href="#">Contact Us : +91 9192939495</a>
+                </div>
+                <div id="socialmedia-footer">
+                    <h3>Social Media</h3>
+                    <a href="">Github <i></i></a>
+                    <a href="">Twitter <i></i></a>
+                    <a href="">Instagram <i></i></a>
+                </div>
+                <div id="newsletter-footer">
+                    <h3>Newsletter</h3>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy</p>
+                    <div id="newsletter">
+                        <input type="text" placeholder="Email">
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <div id="copyrights">
+                <p>&copy; Masala Mantra. All rights reserved. - Built using HTML CSS</p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="recipeModel">
+        <div id="cuisineContent">
+            <div id="crossButton">
+                <button onclick="closeModal()">&times;</button>
+            </div>
+            <div id="cuisineImage">
+                <img src="" alt="RecipeImage" id="ModelImage">
+                <div id="Recipe">
+                    <h2 id="recipeTitle"></h2>
+                    <p id="recipeDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
